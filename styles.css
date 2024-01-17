@@ -1,0 +1,204 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.clearScore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background-color: #2e4756;
+}
+
+.clearScore:hover {
+  cursor: pointer;
+  color: white;
+  background-color: darkgray;
+}
+
+h3 {
+  color: black;
+  border: none;
+  background-color: gray;
+  border-radius: 0px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: darkgray;
+}
+
+main {
+  width: 550px;
+  height: 600px;
+  position: relative;
+  z-index: 1;
+}
+
+.winner {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  font-size: 2rem;
+  z-index: 5;
+  background-color: #1a2a3278;
+  backdrop-filter: blur(10px);
+}
+
+.restart-after-win {
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: white;
+}
+
+.restart-after-win:hover {
+  cursor: pointer;
+}
+
+.winner.show-winner {
+  visibility: hidden;
+}
+
+.header > * {
+  width: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  height: 50px;
+  padding: 0 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clearScore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  /* margin-left: 20px; */
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background-color: grey;
+}
+
+.clearScore:hover {
+  cursor: pointer;
+}
+
+.turn {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+.middle {
+  width: 100%;
+}
+
+.middle ul {
+  width: 100%;
+  height: 550px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.middle > ul li {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  background-color: grey;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.header > div .first,
+.first {
+  color: black;
+  padding-right: 10px;
+  /*padding-left: 20px; */
+  font-size: 20px;
+}
+
+.header > div .second,
+.second {
+  color: indigo;
+}
+
+.header .second,
+.header .first {
+  font-size: 20px;
+}
+
+.bottom {
+  width: 100%;
+  height: 50px;
+  /* margin-bottom: 20px; */
+}
+
+.bottom ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0 20px 0 20px;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.bottom ul li {
+  width: 130px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.player-one-score {
+  background-color: grey;
+}
+
+.tie-score {
+  background-color: grey;
+}
+
+.player-two-score {
+  background-color: gray;
+}
